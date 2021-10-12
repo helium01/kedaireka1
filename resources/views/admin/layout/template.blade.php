@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" href="{{asset('admin')}}/img/icons/icon-48x48.png" />
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="{{asset('admin/css/app.css')}}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -59,7 +59,11 @@
 								<a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
 								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Log out</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="dropdown-item">
+                                    @csrf
+                                    <button type="submit">keluar</button>
+                                </form>
+
 							</div>
 						</li>
 					</ul>
@@ -67,7 +71,27 @@
 			</nav>
 
 			<main class="content">
-@yield('content')
+                    @yield('content')
+                    @yield('kegiatan')
+                    @yield('do_kolam1')
+                    @yield('do_kolam2')
+                    @yield('do_kolam3')
+                    @yield('do_kolam4')
+                    @yield('suhu_kolam1')
+                    @yield('suhu_kolam2')
+                    @yield('suhu_kolam3')
+                    @yield('suhu_kolam4')
+                    @yield('tss_kolam1')
+                    @yield('tss_kolam2')
+                    @yield('tss_kolam3')
+                    @yield('tss_kolam4')
+                    @yield('ph_kolam1')
+                    @yield('ph_kolam2')
+                    @yield('ph_kolam3')
+                    @yield('ph_kolam4')
+                    @yield('edit_kegiatan')
+                    @yield('kegiatanya')
+                    @yield('profil')
 			</main>
 
 			<footer class="footer">
@@ -310,5 +334,6 @@
 	</script>
 
 </body>
+
 
 </html>

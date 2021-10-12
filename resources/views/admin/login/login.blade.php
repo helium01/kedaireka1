@@ -45,7 +45,7 @@
                                         @csrf
 										<div class="mb-3">
 											<label class="form-label">Email</label>
-											<input  name="email" class="form-control @error('password')is-invalid @enderror form-control-lg" type="email" name="email" placeholder="Enter your email" />
+											<input  name="email" class="form-control @error('email')is-invalid @enderror form-control-lg" type="email" name="email" placeholder="Enter your email" />
                                             @error('email')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

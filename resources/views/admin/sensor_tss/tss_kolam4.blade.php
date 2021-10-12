@@ -1,5 +1,5 @@
 @extends('admin.layout.template')
-@section('tss_kolam2')
+@section('tss_kolam4')
 <table class="table">
     <h1 class="col">tabel kegiatan</h1>
     <thead>

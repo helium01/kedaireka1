@@ -6,7 +6,7 @@
 
         <ul class="sidebar-nav">
             <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-profile.html">
+                <a class="sidebar-link" href="{{route('home')}}">
       <i class="align-middle" data-feather="home"></i> <span class="align-middle">dashboard</span>
     </a>
             </li>
@@ -73,28 +73,29 @@
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="ui-buttons.html">
-      <i class="align-middle" data-feather="square"></i> <span class="align-middle">Buttons</span>
+                <a class="sidebar-link" href="{{route('kegiatan')}}">
+      <i class="align-middle" data-feather="square"></i> <span class="align-middle">kegiatan</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="ui-forms.html">
-      <i class="align-middle" data-feather="check-square"></i> <span class="align-middle">Forms</span>
+                <a class="sidebar-link" href="{{route('profil')}}">
+      <i class="align-middle" data-feather="check-square"></i> <span class="align-middle">profil</span>
     </a>
             </li>
 
             <li class="sidebar-item">
                 <a class="sidebar-link" href="ui-cards.html">
-      <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Cards</span>
+      <i class="align-middle" data-feather="grid"></i> <span class="align-middle">penghargaan</span>
     </a>
             </li>
 
             <li class="sidebar-item">
                 <a class="sidebar-link" href="ui-typography.html">
-      <i class="align-middle" data-feather="align-left"></i> <span class="align-middle">Typography</span>
+      <i class="align-middle" data-feather="align-left"></i> <span class="align-middle">susunan pengurus</span>
     </a>
             </li>
+
 
 
 
