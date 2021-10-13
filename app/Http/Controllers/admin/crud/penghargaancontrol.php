@@ -23,7 +23,7 @@ class penghargaancontrol extends Controller
         return view('admin.view_crud.view_penghargaan',['k'=>$penghargaan]);
 
     }
-    public function inpdataprofil(Request $request){
+    public function inpdatapenghargaan(Request $request){
 // dd($request);
 
         $request->validate([
@@ -54,12 +54,12 @@ class penghargaancontrol extends Controller
     {
 
         // dd($id);
-        $request->validate([
-            'foto' => 'required',
-            'tanggal_penghargaan' => 'required',
-            'penghargaan_dari' => 'required',
-            'deskripsi_penghargaan' => 'required',
-        ]);
+        // $request->validate([
+        //     'foto' => 'required',
+        //     'tanggal_penghargaan' => 'required',
+        //     'penghargaan_dari' => 'required',
+        //     'deskripsi_penghargaan' => 'required',
+        // ]);
 
         $id=penghargaan::find($id);
         $id->penghargaan_dari = $request->penghargaan_dari;

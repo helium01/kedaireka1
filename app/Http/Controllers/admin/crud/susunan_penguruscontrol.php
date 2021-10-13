@@ -23,7 +23,7 @@ class susunan_penguruscontrol extends Controller
         return view('admin.view_crud.view_susunan_pengurus',['k'=>$susunan_pengurus]);
 
     }
-    public function inpdataprofil(Request $request){
+    public function inpdatasusunan_pengurus(Request $request){
 // dd($request);
 
         $request->validate([
@@ -56,14 +56,14 @@ class susunan_penguruscontrol extends Controller
     {
 
         // dd($id);
-        $request->validate([
-            'nama' => 'required',
-            'kelamin' => 'required',
-            'ttl' => 'required',
-            'alamat' => 'required',
-            'jabatan' => 'required',
-            'foto' => 'required',
-        ]);
+        // $request->validate([
+        //     'nama' => 'required',
+        //     'kelamin' => 'required',
+        //     'ttl' => 'required',
+        //     'alamat' => 'required',
+        //     'jabatan' => 'required',
+        //     'foto' => 'required',
+        // ]);
         $id=susunan_pengurus::find($id);
         $id->nama = $request->nama;
         $id->kelamin = $request->kelamin;

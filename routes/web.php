@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\admin\crud\kegiatancontrol;
 use App\Http\Controllers\admin\crud\profilcontrol;
+use App\Http\Controllers\admin\crud\penghargaancontrol;
+use App\Http\Controllers\admin\crud\susunan_penguruscontrol;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,17 +42,17 @@ Route::get('/profil/posthapus/{id}',[profilcontrol::class,'hapusprofil'])->name(
 Route::get('/profil/viewkegiatan/{id}',[profilcontrol::class,'viewprofil'])->name('viewprofil');
 
 // route untuk penghargaan
-Route::get('/penghargaan',[profilcontrol::class,'index'])->name('profil');
-Route::post('/penghargaan/post',[profilcontrol::class,'inpdatapenghargaan'])->name('postdatapebghargaan');
-Route::get('/editpenghargaan/{id}', [profilcontrol::class,'editpenghargaan'])->name('editpenghargaan');
-Route::post('/penghargaan/postupdate/{id}',[profilcontrol::class,'updatepenghargaan'])->name('updatepebghargaan');
-Route::get('/penghargaan/posthapus/{id}',[profilcontrol::class,'hapuspenghargaan'])->name('hapuspenghargaan');
-Route::get('/penghargaan/viewpenghargaan/{id}',[profilcontrol::class,'viewpenghargaan'])->name('viewpenghargaan');
+Route::get('/penghargaan',[penghargaancontrol::class,'index'])->name('penghargaan');
+Route::post('/penghargaan/post',[penghargaancontrol::class,'inpdatapenghargaan'])->name('postdatapenghargaan');
+Route::get('/editpenghargaan/{id}', [penghargaancontrol::class,'editpenghargaan'])->name('editpenghargaan');
+Route::post('/penghargaan/postupdate/{id}',[penghargaancontrol::class,'updatepenghargaan'])->name('updatepenghargaan');
+Route::get('/penghargaan/posthapus/{id}',[penghargaancontrol::class,'hapuspenghargaan'])->name('hapuspenghargaan');
+Route::get('/penghargaan/viewpenghargaan/{id}',[penghargaancontrol::class,'viewpenghargaan'])->name('viewpenghargaan');
 
 // route untuk susunan pengurus
-Route::get('/susunan_pengurus',[profilcontrol::class,'index'])->name('profil');
-Route::post('/susunan_pengurus/post',[profilcontrol::class,'inpdatasusunan_pengurus'])->name('postdatasusunan_pengurus');
-Route::get('/editsusunan_pengurus/{id}', [profilcontrol::class,'editsusunan_pengurus'])->name('editsusunan_pengurus');
-Route::post('/susunan_pengurus/postupdate/{id}',[profilcontrol::class,'updatesusunan_pengurus'])->name('updatesusunan_pengurus');
-Route::get('/susunan_pengurus/posthapus/{id}',[profilcontrol::class,'hapussusunan_pengurus'])->name('hapussusunan_pengurus');
-Route::get('/susunan_pengurus/viewpenghargaan/{id}',[profilcontrol::class,'viewsusunan_pengurus'])->name('viewsusunan_pengurus');
+Route::get('/susunan_pengurus',[susunan_penguruscontrol::class,'index'])->name('susunan_pengurus');
+Route::post('/susunan_pengurus/post',[susunan_penguruscontrol::class,'inpdatasusunan_pengurus'])->name('postdatasusunan_pengurus');
+Route::get('/editsusunan_pengurus/{id}', [susunan_penguruscontrol::class,'editsusunan_pengurus'])->name('editsusunan_pengurus');
+Route::post('/susunan_pengurus/postupdate/{id}',[susunan_penguruscontrol::class,'updatesusunan_pengurus'])->name('updatesusunan_pengurus');
+Route::get('/susunan_pengurus/posthapus/{id}',[susunan_penguruscontrol::class,'hapussusunan_pengurus'])->name('hapussusunan_pengurus');
+Route::get('/susunan_pengurus/viewpenghargaan/{id}',[susunan_penguruscontrol::class,'viewsusunan_pengurus'])->name('viewsusunan_pengurus');

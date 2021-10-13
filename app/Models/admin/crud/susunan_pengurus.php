@@ -14,6 +14,7 @@ class susunan_pengurus extends Model
         'nama',
         'kelamin',
         'jabatan',
+        'ttl',
         'alamat',
         'foto',
     ];
