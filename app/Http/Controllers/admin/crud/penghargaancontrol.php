@@ -27,11 +27,10 @@ class penghargaancontrol extends Controller
 // dd($request);
 
         $request->validate([
-            'nama_penghargaan' => 'required',
-            'jenis_penghargaan' => 'required',
-            'tanggal_penghargaan' => 'required',
-            'deskripsi_penghargaan' => 'required',
             'foto' => 'required',
+            'tanggal_penghargaan' => 'required',
+            'penghargaan_dari' => 'required',
+            'deskripsi_penghargaan' => 'required',
         ]);
 
 
@@ -56,14 +55,14 @@ class penghargaancontrol extends Controller
 
         // dd($id);
         $request->validate([
-            'nama_penghargaan' => 'required',
-            'jenis_penghargaan' => 'required',
+            'foto' => 'required',
             'tanggal_penghargaan' => 'required',
+            'penghargaan_dari' => 'required',
             'deskripsi_penghargaan' => 'required',
         ]);
+
         $id=penghargaan::find($id);
-        $id->nama_penghargaan = $request->nama_penghargaan;
-        $id->jenis_penghargaan = $request->jenis_penghargaan;
+        $id->penghargaan_dari = $request->penghargaan_dari;
         $id->tanggal_penghargaan = $request->tanggal_penghargaan;
         $id->deskripsi_penghargaan = $request->deskripsi_penghargaan;
         if($request->hasFile('foto')){

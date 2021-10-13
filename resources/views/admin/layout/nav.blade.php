@@ -85,13 +85,13 @@
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="ui-cards.html">
+                <a class="sidebar-link" href="{{route('penghargaan')}}">
       <i class="align-middle" data-feather="grid"></i> <span class="align-middle">penghargaan</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="ui-typography.html">
+                <a class="sidebar-link" href="{{route('susunan_pengurus')}}">
       <i class="align-middle" data-feather="align-left"></i> <span class="align-middle">susunan pengurus</span>
     </a>
             </li>

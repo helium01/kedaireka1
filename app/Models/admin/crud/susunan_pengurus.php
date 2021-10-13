@@ -17,4 +17,9 @@ class susunan_pengurus extends Model
         'alamat',
         'foto',
     ];
+    function delete_image()
+    {
+        if ($this->image && file_exists(public_path('admin/pegawai/' . $this->image)))
+            return unlink(public_path('admin/pegawai/' . $this->image));
+    }
 }

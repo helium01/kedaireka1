@@ -16,4 +16,9 @@ class penghargaan extends Model
         'penghargaan_dari',
         'deskripsi_penghargaan',
     ];
+    function delete_image()
+    {
+        if ($this->image && file_exists(public_path('admin/pegawai/' . $this->image)))
+            return unlink(public_path('admin/pegawai/' . $this->image));
+    }
 }
