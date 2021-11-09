@@ -7,5 +7,13 @@ use Illuminate\Http\Request;
 
 class phkolam2control extends Controller
 {
-    //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    public function index(){
+        return view("admin.sesnor_ph.ph_kolam2");
+    }
+
 }

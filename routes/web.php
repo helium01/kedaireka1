@@ -4,6 +4,20 @@ use App\Http\Controllers\admin\crud\kegiatancontrol;
 use App\Http\Controllers\admin\crud\profilcontrol;
 use App\Http\Controllers\admin\crud\penghargaancontrol;
 use App\Http\Controllers\admin\crud\susunan_penguruscontrol;
+use App\Http\Controllers\admin\sensor_do\dokolam1control;
+use App\Http\Controllers\admin\sensor_ph\phkolam1control;
+use App\Http\Controllers\admin\sensor_ph\phkolam2control;
+use App\Http\Controllers\admin\sensor_ph\phkolam3control;
+use App\Http\Controllers\admin\sensor_ph\phkolam4control;
+use App\Http\Controllers\admin\sensor_suhu\suhukolam1control;
+use App\Http\Controllers\admin\sensor_suhu\suhukolam2control;
+use App\Http\Controllers\admin\sensor_suhu\suhukolam3control;
+use App\Http\Controllers\admin\sensor_suhu\suhukolam4control;
+use App\Http\Controllers\admin\sensor_tss\tsskolam1control;
+use App\Http\Controllers\admin\sensor_tss\tsskolam2control;
+use App\Http\Controllers\admin\sensor_tss\tsskolam3control;
+use App\Http\Controllers\admin\sensor_tss\tsskolam4control;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -56,3 +70,28 @@ Route::get('/editsusunan_pengurus/{id}', [susunan_penguruscontrol::class,'editsu
 Route::post('/susunan_pengurus/postupdate/{id}',[susunan_penguruscontrol::class,'updatesusunan_pengurus'])->name('updatesusunan_pengurus');
 Route::get('/susunan_pengurus/posthapus/{id}',[susunan_penguruscontrol::class,'hapussusunan_pengurus'])->name('hapussusunan_pengurus');
 Route::get('/susunan_pengurus/viewpenghargaan/{id}',[susunan_penguruscontrol::class,'viewsusunan_pengurus'])->name('viewsusunan_pengurus');
+
+// route untuk ph semua kolam
+Route::get('/ph_kolam1', [phkolam1control::class,"index"])->name('phk1');
+Route::get('/ph_kolam2', [phkolam2control::class,"index"])->name('phk2');
+Route::get('/ph_kolam3', [phkolam3control::class,"index"])->name('phk3');
+Route::get('/ph_kolam4', [phkolam4control::class,"index"])->name('phk4');
+
+// route untuk ph semua kolam
+Route::get('/suhu_kolam1', [suhukolam1control::class,"index"])->name('suhuk1');
+Route::get('/suhu_kolam2', [suhukolam2control::class,"index"])->name('suhuk2');
+Route::get('/suhu_kolam3', [suhukolam3control::class,"index"])->name('suhuk3');
+Route::get('/suhu_kolam4', [suhukolam4control::class,"index"])->name('suhuk4');
+
+// route untuk ph semua kolam
+Route::get('/tss_kolam1', [tsskolam1control::class,"index"])->name('tssk1');
+Route::get('/tss_kolam2', [tsskolam2control::class,"index"])->name('tssk2');
+Route::get('/tss_kolam3', [tsskolam3control::class,"index"])->name('tssk3');
+Route::get('/tss_kolam4', [tsskolam4control::class,"index"])->name('tssk4');
+
+// route untuk sensor do
+route::get('/sensor_do',[dokolam1control::class,'index'])->name('dosensor');
+
+// tes peta
+route::get('/peta',[HomeController::class,'peta'])->name('peta');
+

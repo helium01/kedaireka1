@@ -19,10 +19,10 @@
                     <i class="align-middle" data-feather="thermometer"></i>   <span class="align-middle">sensor suhu</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="box"></i> kolam 1</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="box"></i> kolam 2</a>
-                    <a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="box"></i> kolam 3</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="box"></i> kolam 4</a>
+                    <a class="dropdown-item" href="{{route('suhuk1')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 1</a>
+                    <a class="dropdown-item" href="{{route('suhuk2')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 2</a>
+                    <a class="dropdown-item" href="{{route('suhuk3')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 3</a>
+                    <a class="dropdown-item" href="{{route('suhuk4')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 4</a>
                 </div>
 
             </li>
@@ -32,10 +32,10 @@
                     <i class="align-middle" data-feather="slack"></i>   <span class="align-middle">sensor pH</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="box"></i> kolam 1</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="box"></i> kolam 2</a>
-                    <a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="box"></i> kolam 3</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="box"></i> kolam 4</a>
+                    <a class="dropdown-item" href="{{route('phk1')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 1</a>
+                    <a class="dropdown-item" href="{{route('phk2')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 2</a>
+                    <a class="dropdown-item" href="{{route('phk3')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 3</a>
+                    <a class="dropdown-item" href="{{route('phk4')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 4</a>
                 </div>
 
             </li>
@@ -45,10 +45,7 @@
                     <i class="align-middle" data-feather="wind"></i>   <span class="align-middle">sensor DO</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="box"></i> kolam 1</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="box"></i> kolam 2</a>
-                    <a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="box"></i> kolam 3</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="box"></i> kolam 4</a>
+                    <a class="dropdown-item" href="{{route('dosensor')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 5</a>
                 </div>
 
             </li>
@@ -58,10 +55,10 @@
                     <i class="align-middle" data-feather="droplet"></i>   <span class="align-middle">sensor Tss</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="box"></i> kolam 1</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="box"></i> kolam 2</a>
-                    <a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="box"></i> kolam 3</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="box"></i> kolam 4</a>
+                    <a class="dropdown-item" href="{{route('tssk1')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 1</a>
+                    <a class="dropdown-item" href="{{route('tssk2')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 2</a>
+                    <a class="dropdown-item" href="{{route('tssk3')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 3</a>
+                    <a class="dropdown-item" href="{{route('tssk4')}}"><i class="align-middle me-1" data-feather="box"></i> kolam 4</a>
                 </div>
 
             </li>

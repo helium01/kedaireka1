@@ -1,7 +1,7 @@
 @extends('admin.layout.template')
 @section('ph_kolam3')
 <table class="table">
-    <h1 class="col">tabel kegiatan</h1>
+    <h1 class="col">tabel monitoring ph kolam 3</h1>
     <thead>
       <tr>
         <th scope="col">nama kegiatan</th>
@@ -12,7 +12,7 @@
       </tr>
     </thead>
     <tbody>
-        @foreach ($kegiatan as $k)
+
       {{-- <tr>
         <th>{{$k->nama_kegiatan}}</th>
         <td>{{$k->jenis_kegiatan}}</td>
@@ -20,7 +20,7 @@
         <td>{{$k->deskripsi_kegiatan}}</td>
         <td>{{$k->foto}}</td>
       </tr> --}}
-      @endforeach
+
     </tbody>
   </table>
 @endsection

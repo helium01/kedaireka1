@@ -27,9 +27,9 @@
                                         detail
                                     </div>
                                 </div>
-                                <h1 class="mt-1 mb-3">2.382</h1>
+                                <h1 class="mt-1 mb-3">{{$data2}}</h1>
                                 <div class="mb-0">
-                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 3.65 </span>
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> {{$datas2}} </span>
                                     <span class="text-muted">data sebelumnya</span>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col mt-0">
-                                        <h5 class="card-title">kolam 1</h5>
+                                        <h5 class="card-title">kolam 5</h5>
                                     </div>
 
                                     <div class="col-auto">
@@ -130,88 +130,16 @@
                                         detail
                                     </div>
                                 </div>
-                                <h1 class="mt-1 mb-3">2.382</h1>
+                                <h1 class="mt-1 mb-3">{{$data4}}</h1>
                                 <div class="mb-0">
-                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 3.65 </span>
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> {{$datas4}} </span>
                                     <span class="text-muted">data sebelumnya</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col mt-0">
-                                        <h5 class="card-title">kolam 2</h5>
-                                    </div>
 
-                                    <div class="col-auto">
-                                        <a href="#">
-                                        <div class="stat text-primary">
-                                            <i class="align-middle" data-feather="arrow-right"></i>
-
-                                        </div>
-                                        </a>
-                                        detail
-                                    </div>
-                                </div>
-                                <h1 class="mt-1 mb-3">2.382</h1>
-                                <div class="mb-0">
-                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 3.65 </span>
-                                    <span class="text-muted">data sebelumnya</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col mt-0">
-                                        <h5 class="card-title">kolam 3</h5>
-                                    </div>
 
-                                    <div class="col-auto">
-                                        <a href="#">
-                                        <div class="stat text-primary">
-                                            <i class="align-middle" data-feather="arrow-right"></i>
-
-                                        </div>
-                                        </a>
-                                        detail
-                                    </div>
-                                </div>
-                                <h1 class="mt-1 mb-3">2.382</h1>
-                                <div class="mb-0">
-                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 3.65 </span>
-                                    <span class="text-muted">data sebelumnya</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col mt-0">
-                                        <h5 class="card-title">kolam 4</h5>
-                                    </div>
-
-                                    <div class="col-auto">
-                                        <a href="#">
-                                        <div class="stat text-primary">
-                                            <i class="align-middle" data-feather="arrow-right"></i>
-
-                                        </div>
-                                        </a>
-                                        detail
-                                    </div>
-                                </div>
-                                <h1 class="mt-1 mb-3">2.382</h1>
-                                <div class="mb-0">
-                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 3.65 </span>
-                                    <span class="text-muted">data sebelumnya</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -236,9 +164,9 @@
                                         detail
                                     </div>
                                 </div>
-                                <h1 class="mt-1 mb-3">2.382</h1>
+                                <h1 class="mt-1 mb-3">{{$data3}}</h1>
                                 <div class="mb-0">
-                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 3.65 </span>
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> {{$datas3}} </span>
                                     <span class="text-muted">data sebelumnya</span>
                                 </div>
                             </div>
@@ -339,9 +267,9 @@
                                         detail
                                     </div>
                                 </div>
-                                <h1 class="mt-1 mb-3">2.382</h1>
+                                <h1 class="mt-1 mb-3">{{$data1}}</h1>
                                 <div class="mb-0">
-                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 3.65 </span>
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> {{$datas4}} </span>
                                     <span class="text-muted">data sebelumnya</span>
                                 </div>
                             </div>
