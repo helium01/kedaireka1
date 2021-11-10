@@ -95,3 +95,6 @@ route::get('/sensor_do',[dokolam1control::class,'index'])->name('dosensor');
 // tes peta
 route::get('/peta',[HomeController::class,'peta'])->name('peta');
 
+// tes date time
+route::post('/post/date',[phkolam1control::class,'index2']);
+
