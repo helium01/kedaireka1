@@ -12,36 +12,26 @@
           <tr>
             <th scope="col">data sensor</th>
             <th scope="col">tanggal sensor</th>
+            <form method="POST" action="/post/date">
+                @csrf
             <th scope="col">
-                <div class="dropdown">
-                    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      cetak data
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="{{route('cetak')}}">PDF</a></li>
-                      <li><a class="dropdown-item" href="#">exel</a></li>
-                      <li><a class="dropdown-item" href="#">CSV</a></li>
-                    </ul>
-                    <a class="btn btn-primary" href="#" role="button">lihat history data</a>
-                  </div>
+                masukan tanggal awal
+                <input name="start" type="text" id="date">
+                masukan akhir
+                <input name="end" type="text" id="date1">
+                <button type="submit" class="btn btn-primary">Submit</button>
             </th>
         </form>
           </tr>
         </thead>
-        @if ($b=="0")
-        <th colspan="2">mungkin arduino mati</th>
-        @else
-        @for ($a=sizeof($data)-1;$a>=0;$a--)
-        <tbody>
-         <tr>
-           <th>{{$data[$a]['field1']}}</th>
-           <td>{{$data[$a]['created_at']}}</td>
-         </tr>
-       </tbody>
-        @endfor
-        @endif
-
-
+       @for ($a=sizeof($data)-1;$a>=0;$a--)
+       <tbody>
+        <tr>
+          <th>{{$data[$a]['field1']}}</th>
+          <td>{{$data[$a]['created_at']}}</td>
+        </tr>
+      </tbody>
+       @endfor
 
 
       </table>

@@ -98,3 +98,6 @@ route::get('/peta',[HomeController::class,'peta'])->name('peta');
 // tes date time
 route::post('/post/date',[phkolam1control::class,'index2']);
 
+
+// TES CETAK
+route::get('/cetakph',[phkolam1control::class,'cetak'])->name('cetak');
